@@ -3,9 +3,9 @@ This project makes use of detection and tracking techniques to follow a moving l
 it then publishes a sequence of frames with bounding rectangles around the cup and/or the label with the mention inside/outside
 into a web page using a web service
 ## Features 
-1. Detect the cup and draw a bouding box around it, moreover the mention **inside** is inserted into the frame, to acheive this result, the algorithm uses a color and contour detection technique to perform the task
+1. Detect the cup and draw a bouding box around it, if the detection is successful the mention **inside** is inserted into the frame, to acheive this result, the algorithm uses a color and contour detection technique to perform the task
 
-2. Detect the label present in the cup and insert the mention **inside** into the frame, for this the algorithm uses the ORB feature detector to match descriptors previously extracted with the descriptors computed from the image, to make sure that the matched keypoints are indeed in the cup area, we detect the cup and double check that the keypoints is inside the cup bounding box 
+2. Detect the label present in the cup and insert the mention **inside** into the frame, for this,  the algorithm uses the ORB feature detector to match descriptors previously extracted with the descriptors computed from the image, to make sure that the matched keypoints are indeed in the cup area, we detect the cup and double check that the keypoints are inside the cup bounding box 
 
 ## Prerequisties 
 To use the code you will need Python3.x,  OpenCV and some dependencies:
