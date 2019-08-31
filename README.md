@@ -1,4 +1,4 @@
-# Labeled Cup-detection-and-tracking web service
+# Labeled cup detection and tracking web service
 This project makes use of detection and tracking techniques to follow a moving labeled cup in a video stream, 
 it then publishes a sequence of frames with bounding rectangles around the cup and/or the label and with the mention inside/outside on the frames which are fed into web page (localhost:5000) using a web service
 ## Features 
