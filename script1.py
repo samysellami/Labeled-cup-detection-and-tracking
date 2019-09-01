@@ -37,11 +37,9 @@ def get_keypoints(frame):
 
 def pickle_keypoints(keypoints):
     ###### function to save the keypoints
-    i = 0
     temp_array = []
     for point in keypoints:
         temp = (point.pt, point.size, point.angle, point.response, point.octave, point.class_id)
-        ++i
         temp_array.append(temp)
     return temp_array
 
