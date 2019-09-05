@@ -359,9 +359,6 @@ def detect_object(frame, capture, kp1, des1, track_cup_label, using_tracker):
         show_frame(frame, boxes, inside, text, 'detection', 1, colors)
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         cv2.imwrite('static/photo_{}.png'.format(capture.get(cv2.CAP_PROP_POS_FRAMES)), frame)
-        if capture.get(cv2.CAP_PROP_POS_FRAMES) ==5:
-            frame = None
-            break
 
         if using_tracker and inside:
             return frame, boxes
