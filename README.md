@@ -8,7 +8,8 @@ it then publishes a sequence of frames with bounding rectangles around the cup a
 2. Detect the label present in the cup and insert the mention **inside** into the frame, for this,  the algorithm uses the ORB feature detector to match descriptors previously extracted (keypoints_database.p) with the descriptors computed from the image, to make sure that the matched keypoints are indeed in the cup area, we detect the cup using the steps mentioned in (1) and we double check that the keypoints are inside the cup bounding box 
 
 ## Prerequisites
-To use the code you will need Python3.x,  OpenCV and some dependencies, If you're a conda user, you can create an environment from the environment.yml file using the Terminal or an Anaconda Prompt following these steps::
+To use the code you will need Python3.x,  OpenCV and some dependencies, 
+- If you're a conda user, the first method is to create an environment from the environment.yml file using the Terminal or an Anaconda Prompt following these steps::
 1. Create the environment from the object_detection_environment.yml file:
 ```
 conda env create -f environment.yml
@@ -21,6 +22,15 @@ conda env create -f environment.yml
 3. Verify that the new environment was installed correctly:
 ```
 conda list
+```
+- The second method is to install Pipenv using the command :
+```
+pip install pipenv
+```
+
+And then use the ```pipenv install``` command that will locate the pipfiles in the repository, create a new virtual environment and install the necessary packages. In order to activate the virtual environment associated with the Python project you can simply use the shell keyword,
+```
+pipenv shell
 ```
 
 ## Usage
