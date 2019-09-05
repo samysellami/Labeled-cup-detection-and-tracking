@@ -9,11 +9,20 @@ it then publishes a sequence of frames with bounding rectangles around the cup a
 
 ## Prerequisites
 To use the code you will need Python3.x,  OpenCV and some dependencies:
-1. Create and activate a new environemnt (optional)
-2. Install **Flask** for creating web services using the following command:
+1. Create the environment from the object_detection_environment.yml file:
 ```
-pip install Flask
-``` 
+conda env create -f environment.yml
+```
+
+2. Activate the new environment:
+- Windows: ``` activate cup_detection_env ```
+- macOS and Linux: ``` source activate cup_detection_env ```
+
+3. Verify that the new environment was installed correctly:
+```
+conda list
+```
+
 ## Usage
 Launch script1.py from your favorite IDE or from your command prompt. In the main code you will see two variables; 
 **_track_cup_label_** and **_using_tracker_**, the first one define which object to detect and track
