@@ -158,7 +158,7 @@ smach-ros==2.0.1
 smclib==1.8.3
 srdfdom==0.4.2
 tensorboard==1.10.0
-tensorflow==1.10.0
+tensorflow==2.5.1
 termcolor==1.1.0
 tf==1.11.9
 tf-conversions==1.11.9
